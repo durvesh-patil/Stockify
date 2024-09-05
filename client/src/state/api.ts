@@ -8,6 +8,13 @@ export interface Product {
     stockQuantity: number;
 }
 
+export interface NewProduct {
+    name: string;
+    price: number;
+    rating?: number;
+    stockQuantity: number;
+}
+
 export interface SalesSummary {
     salesSummaryId: string;
     totalValue: number;
@@ -29,7 +36,10 @@ export interface ExpenseSummary {
 }
 
 export interface ExpenseByCategorySummary {
-
+    expenseByCategorySummaryId: string;
+    category: string;
+    amount: string;
+    date: string;
 }
 
 ////////////////////////
