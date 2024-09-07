@@ -4,8 +4,6 @@ import React, { useEffect } from "react";
 import NavBar from "@/app/(components)/NavBar";
 import SideBar from "./(components)/SideBar";
 import StoreProvider, { useAppSelector } from "./redux";
-import { current } from "tailwindcss/colors";
-import { light } from "@mui/material/styles/createPalette";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   //use selector to get the state of the sidebar
@@ -32,7 +30,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     >
       <SideBar />
       <main
-        className={`flex flex-col w-full h-full py-7 px-9 bg-gray-200 ${
+        className={`flex flex-col w-full h-full py-7 px-9 bg-gray-50 ${
           isSidebarCollapsed ? "md:pl-24" : "md:pl-72"
         }`}
       >
