@@ -9,6 +9,7 @@ import morgan from 'morgan';
 import dashboardRoutes from './routes/dashboardRoutes';
 import productRoutes from './routes/productRoutes';
 import userRoutes from "./routes/userRoutes"
+import expenseRoutes from "./routes/expenseRoutes"
 
 
 //config
@@ -26,6 +27,8 @@ app.use(cors());
 app.use("/dashboard", dashboardRoutes) //http://localhost:5000/dashboard
 app.use("/products", productRoutes) //http://localhost:5000/products
 app.use("/users", userRoutes) //http://localhost:5000/users
+app.use("/expenses", expenseRoutes) //http://localhost:5000/expenses
+
 
 //SERVER
 const port = process.env.PORT || 5000;
