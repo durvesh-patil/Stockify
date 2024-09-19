@@ -69,7 +69,7 @@ const NavBar = () => {
               alt="Durvesh Patil"
               width={50}
               height={50}
-              className="rounded-full h-full object-cover"
+              className="rounded h-full object-cover"
             />
             <span className="font-semibold">Durvesh Patil</span>
           </div>
